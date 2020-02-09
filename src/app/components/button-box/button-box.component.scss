@@ -1,0 +1,15 @@
+.button-box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border: solid 2px black;
+
+	&--recoloured {
+		background-color: purple;
+	}
+
+	&__button {
+    margin: auto;
+    display: block;
+	}
+}

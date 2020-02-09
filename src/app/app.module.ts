@@ -7,12 +7,14 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { ButtonBoxComponent } from './components/button-box/button-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    ButtonBoxComponent
   ],
   imports: [
     RouterModule,
