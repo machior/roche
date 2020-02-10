@@ -1,1 +1,52 @@
 second
+<header class="header">
+	header
+</header>
+
+<section class="body">
+
+	<aside *ngIf="data.leftSide.active" class="body__left left" [class.left--border]="data.leftSide.mods === 'border'" >
+		{{ data.leftSide.text }}
+	</aside>
+
+	<main class="body__main main">
+		<div id="main-left">
+			<article>
+				<header><h1>{{ data.main.title }}</h1></header>
+
+				<p>
+					{{ data.main.text }}
+				</p>
+
+				<p>
+					{{ data.main.text }}
+				</p>
+
+				<p>
+					{{ data.main.text }}
+				</p>
+
+				<p>
+					{{ data.main.text }}
+				</p>
+
+			</article>
+		</div>
+
+	</main>
+
+	<aside *ngIf="data.rightSide.active" class="body__right right">
+		{{ data.rightSide.text }}
+	</aside>
+
+</section>
+
+<footer class="footer">
+	<ul>
+		<li>menu 1</li>
+		<li>menu 2</li>
+		<li>menu 3</li>
+		<li>menu 4</li>
+		<li>menu 5</li>
+	</ul>
+</footer>

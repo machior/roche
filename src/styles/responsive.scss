@@ -1,0 +1,16 @@
+$small: 479px;
+
+$medium: 767px;
+
+
+@mixin max-mobile() {
+  @media (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin max-tablet() {
+  @media (max-width: $medium) {
+    @content;
+  }
+}

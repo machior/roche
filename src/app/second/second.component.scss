@@ -1,0 +1,48 @@
+@import './src/styles/responsive';
+
+.header {
+	background-color: red;
+}
+
+.body {
+	display: flex;
+	justify-content: space-between;
+
+	@include max-tablet {
+		width: 100%;
+	}
+
+	@include max-mobile {
+		display: block;
+	}
+}
+
+.left {
+	background-color: lightgreen;
+	width: 200px;
+
+	@include max-tablet {
+		width: 100%;
+	}
+
+	&--border {
+		border: dotted yellow 2px;
+	}
+}
+
+.main {
+	background-color: darkgreen;
+}
+
+.right {
+	background-color: greenyellow;
+	width: 200px;
+
+	@include max-tablet {
+		width: 100%;
+	}
+}
+
+.footer {
+	background-color: blue;
+}
